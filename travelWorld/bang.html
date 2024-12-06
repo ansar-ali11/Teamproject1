@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "Dongle-light";
+            src: url("Dongle/Dongle-Light.ttf");
+        }
+
+        @font-face {
+            font-family: "Dongle-regular";
+            src: url("Dongle/Dongle-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Dongle-bold";
+            src: url("Dongle/Dongle-Bold.ttf");
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%),
+                url("https://media.istockphoto.com/id/470628060/photo/bangalore-city-skyline-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=0YpFfF3OedVXeU0UFVU_7EvzGDST3fAgsmNlfjgrPa0=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .logo h2 {
+            font-family: "Dongle-regular";
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: -20px;
+            color: #ff5020;
+        }
+
+        .content {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .places {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            border-radius: 25px; /* Half border radius */
+            height: 250px;
+            width: 250px;
+        }
+
+        .text-content {
+            max-width: 600px; /* Width for text content */
+            font-family: "Dongle-regular";
+            font-size: 1.8rem;
+            color: orange;
+            margin-left: 20px; /* Space between cards and text */
+        }
+
+        .text-content p {
+            margin-bottom: 20px; /* Space between paragraphs */
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            background-color: #ff5020;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <h2>Bangalore</h2>
+    </div>
+
+    <div class="content">
+        <div class="places">
+            <h3>Welcome to Bangalore!</h3>
+            <p>Bangalore, the capital of Karnataka, is known as the Silicon Valley of India. It offers a perfect blend of nature and technology.</p>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/Gg0HzDPOFurmn-f08rUprbYvUKWAQ05DEhWdx1CNrCU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYW5n/YWxvcmV0b3VyaXNt/LmluL2ltYWdlcy92/Mi9oZWFkZXJzL2xh/bGJhZ2gtYm90YW5p/Y2FsLWdhcmRlbi1i/YW5nYWxvcmUtdGlt/aW5ncy1lbnRyeS1m/ZWUtYmFuZ2Fsb3Jl/LXRvdXJpc20taGVh/ZGVyLWNyLW1iZWxs/LTAyLmpwZw"
+                    alt="Lalbagh Botanical Garden">
+                <h4>Lalbagh Botanical Garden</h4>
+                <p>A stunning garden featuring a glass house and numerous species of flora.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/3Dz33rLtv4OOqpk_rZIjcnAYpVIych5D5UXqZGer5nk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oYmxp/bWcubW10Y2RuLmNv/bS9jb250ZW50L2h1/YmJsZS9pbWcvYmFu/Z2xvcmUvbW10L2Fj/dGl2aXRpZXMvbV9h/Y3Rpdml0aWVzX2Jh/bmdhbG9yZV9iYW5n/YWxvcmVfcGFsYWNl/X2xfNDA4XzYxMi5q/cGc"
+                    alt="Bangalore Palace">
+                <h4>Bangalore Palace</h4>
+                <p>An architectural wonder inspired by England’s Windsor Castle.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/Qn8hycqdCCw68hSAGh6c-KP8LPuncAaG5V5ZaJpwk60/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTkz/OTIyMzk4L3Bob3Rv/L3ZpZGhhbmEtc291/ZGhhLWluLWJhbmdh/bG9yZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WGdySF9u/dHl4UFF5dTNPZjh2/TnVlOHJCZmxEZU5O/OXh4bEtWdGxRcWkz/cz0"
+                    alt="Vidhana Soudha">
+                <h4>Vidhana Soudha</h4>
+                <p>The seat of the Karnataka legislature, known for its grand architecture.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/NXtIQwTjxhWF46eDr4-AJjbEuOYVhp7TUWuKGwROQwo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtYmxvZy50cmVl/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEwL0Nh/ZmUtQXp6dXJlLTEw/MjR4Njc1LmpwZw"
+                    alt="Commercial Street">
+                <h4>Commercial Street</h4>
+                <p>A bustling shopping area with local shops and street food.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/hznf3F4P-ji4K_X3ud84aSCbG7HlU43MBE9I7W-fupk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYW5n/YWxvcmV0b3VyaXNt/LmluL2ltYWdlcy9o/ZWFkZXJzL3RpcHUt/c3VtbWVyLXBhbGFj/ZS1iYW5nYWxvcmUt/dGltaW5ncy1lbnRy/eWZlZS1iYW5nYWxv/cmUtdG91cmlzbS1o/ZWFkZXIuanBn"
+                    alt="Tipu Sultan's Summer Palace">
+                <h4>Tipu Sultan's Summer Palace</h4>
+                <p>A historical monument showcasing Indo-Islamic architecture.</p>
+            </div>
+        </div>
+
+        <div class="text-content">
+            <h3>Explore the Culture</h3>
+            <p>Bangalore is a city rich in culture and history. With its diverse population, it offers a unique blend of traditions and modernity.</p>
+            <p>The city is famous for its parks and gardens, which provide a perfect escape from the urban hustle. The local cuisine is a must-try, featuring a variety of flavors and dishes.</p>
+            <p>Don't miss the vibrant nightlife and numerous cultural events that showcase the artistic side of Bangalore!</p>
+            <a href="explore.html#foodinbng"><button>Explore Food</button></a>
+        </div>
+    </div>
+</body>
+
+</html>

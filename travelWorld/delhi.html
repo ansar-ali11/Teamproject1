@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Delhi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("https://media.istockphoto.com/id/1002415624/photo/new-delhi-city-in-daytime.jpg?s=612x612&w=0&k=20&c=eZkR0veckRgWRSCkBEIINfVS_aElRO7i3sFOzH-ON-A=");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .logo {
+            color: orange;
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .content h3 {
+            font-size: 36px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 114, 0, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h4 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 0 10px 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 140, 0, 0.9);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: orange;
+            color: white;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <h2>New Delhi</h2>
+    </div>
+    
+    <div class="content">
+        <h3>Welcome to New Delhi!</h3>
+        <p>New Delhi, the capital city of India, is a vibrant metropolis with a rich history.</p>
+        
+        <div class="places">
+            <div class="card">
+                <img src="https://imgs.search.brave.com/1OqxVUm2PJwjnP9kzoFh5PJcrVeCvLG0ppyn8w6LT0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3VsdHVyYWxpbmRp/YS5uZXQvaWxpaW1h/Z2VzL0luZGlhLUdh/dGUtMi5qcGc" alt="India Gate">
+                <h4>India Gate</h4>
+                <p>A war memorial and a popular tourist attraction.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/yffPjXOZfg6OxHDBZKZmnGbHeG6eUVG_N_yFq5dfcZc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM3/ODA0NjAwL3Bob3Rv/L3JlZC1mb3J0LWF0/LW5ldy1kZWxoaS1p/bmRpYS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9UHdWdkk5/bDVVLW1kLTFhSThl/elVpb2ZPRTlwb3B2/bmh5Zk5JM19JRnJP/WT0" alt="Red Fort">
+                <h4>Red Fort</h4>
+                <p>A UNESCO World Heritage site known for its stunning Mughal architecture.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/hT1McYuiwemv1xwwQmIqqMwLgG13Wv4s_kjymJ5nmsU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTY1/MjA0NTkyL3Bob3Rv/L3F1dHViLW1pbmFy/LWRlbGhpLWluZGlh/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ZdkZMUG1RbWxn/Q3lYN1JHWkExVnBL/Y3RkQzZRc0NoSU56/TFNNRFBOSTlrPQ" alt="Qutub Minar">
+                <h4>Qutub Minar</h4>
+                <p>The tallest brick minaret in the world, surrounded by beautiful ruins.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/cCsHrAFFp0BuQGi3qa9v6IVTTMQqDamYy74tP9julzI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWxo/aXRvdXJpc20udHJh/dmVsL2ltYWdlcy9w/bGFjZXMtdG8tdmlz/aXQvaGVhZGVycy9s/b3R1cy10ZW1wbGUt/YmFoYWktdGVtcGxl/LWRlbGhpLWVudHJ5/LWZlZS10aW1pbmdz/LWhvbGlkYXlzLXJl/dmlld3MtaGVhZGVy/LmpwZw" alt="Lotus Temple">
+                <h4>Lotus Temple</h4>
+                <p>A Bahá'í House of Worship famous for its lotus-like architecture.</p>
+            </div>
+            <div class="card">
+                <img src="https://imgs.search.brave.com/RR8XyzOIeJ8XvtwXRHA3ObqV-bN9tFPHyCh3TZkEHSI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM3L0F0aHB1bGFf/KGVpZ2h0X3BpZXJl/ZClfQnJpZGdlX2lu/X0xvZGlfZ2FyZGVu/cy5KUEc" alt="Lodi Gardens">
+                <h4>Lodi Gardens</h4>
+                <p>A tranquil park dotted with historical tombs and monuments.</p>
+            </div>
+        </div>
+        <a href="explore.html#foodindelhi"><button>Explore Food</button></a>
+    </div>
+</body>
+</html>
